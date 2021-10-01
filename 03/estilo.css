@@ -4,16 +4,18 @@
         }
   .centrado{
     margin-left: auto; margin-right: auto;}
-  body { 
- 
-}
-#html {
-  background: url(https://i.pinimg.com/originals/2a/05/c8/2a05c8cffdb87a17c9cd298740494cc3.gif) no-repeat center center fixed; 
+
+html {
+  background: url(https://i.pinimg.com/originals/2a/05/c8/2a05c8cffdb87a17c9cd298740494cc3.gif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   backdrop-filter: blur(100px);
+  flex: 0 0 100%;
+
+  width: 100%;
+  object-fit: cover;
 }
   div#Contenido {
     margin-top: 25px;
@@ -45,7 +47,7 @@
    color: #e0e0e0;
    font-weight: bold;
    text-align:center;
-  
+
 }
 
   div#Header {
@@ -61,10 +63,10 @@
   #LOGO {
     height: 45px;
     float: left;
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-top: 10px;
     position: fixed;
-    
+
   }
   .fotos {
     margin: auto;
@@ -73,40 +75,9 @@
     }
 
   .fotos {
-transition: transform .2s; 
+transition: transform .2s;
 }
 
 .fotos:hover {
     transform: scale(1.5);
 }
-#spotify {
-  position: fixed;
-  top: 125px;
-  right: 25px;
-  margin-right: 10px;
-
-}
-
-
-html {
-  background: url(https://i.pinimg.com/originals/2a/05/c8/2a05c8cffdb87a17c9cd298740494cc3.gif)no-repeat center center fixed;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment:inherit;
- 
-}
-
-
-body {
-  background: rgba(20, 20, 20, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment:inherit;
-  
-} 

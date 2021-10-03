@@ -145,7 +145,7 @@ div.paginas {
 
 .menu li a:hover {
   color: rgb(0, 64, 255);
-  transition: all .3s;
+  transition: all .4s;
 }
 
 .submenu {

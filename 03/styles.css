@@ -93,8 +93,8 @@ div .Noticia {
 
 #spotify {
   position: fixed;
-  bottom: 15px;
-  right: 15px;
+  top: 125px;
+  right: 25px;
   margin-right: 10px;
 }
 
@@ -102,60 +102,6 @@ div.paginas {
   margin: auto;
   width: 100%;
   margin-bottom: 30px;
-}
-
-.naviegacion {
-  width: auto;
-  margin: 15px;
-  padding: 0px;
-  background-color: rgba(161, 184, 210, 0.55);
-  text-align: center;
-}
-
-.naviegacion ul {
-  list-style: none;
-}
-
-.menu>li {
-  position: relative;
-  display: inline-block;
-}
-
-.menu li>a {
-  position: relative;
-  display: block;
-  padding: 15px 20px;
-  color: ;
-  font-family: "open sans";
-  text-decoration: none;
-}
-
-.menu li a:hover {
-  color: rgb(0, 64, 255);
-  transition: all .3s;
-}
-
-.submenu {
-  position: absolute;
-  background: rgba(143, 202, 218, 0.68);
-  width: 120%;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.submenu li a {
-  display: block;
-  width: auto;
-  padding: 15px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-}
-
-.menu li:hover .submenu {
-  visibility: visible;
-  opacity: 1;
 }
 
 /* PIE DE PAGINA */

@@ -4,7 +4,6 @@
   padding: 0px;
 }
 
-
 html {
   background-image: url(https://i.pinimg.com/originals/2a/05/c8/2a05c8cffdb87a17c9cd298740494cc3.gif);
   background-position: bottom;
@@ -16,14 +15,15 @@ html {
   display: flex;
 }
 
-
 body {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
   height: 100vh;
-	width: 100%;
+  width: 100%;
 }
-https://i.pinimg.com/originals/2a/05/c8/2a05c8cffdb87a17c9cd298740494cc3.gif
+
+https: //i.pinimg.com/originals/2a/05/c8/2a05c8cffdb87a17c9cd298740494cc3.gif
+
 .centrado {
   text-align: center;
 }
@@ -102,7 +102,7 @@ div .Noticia {
   top: 125px;
   right: 15px;
   margin-bottom: 15px;
-  margin-top: 10px;
+  margin-top: 125px;
   margin-right: 10px;
   float: right;
 }
@@ -114,11 +114,16 @@ div.paginas {
 }
 
 .naviegacion {
-  width: auto;
+  position: absolute;
   margin: 15px;
+  margin-top: 50px;
+  width: auto;
   padding: 0px;
   background-color: rgba(161, 184, 210, 0.55);
   text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 .naviegacion ul {
@@ -147,7 +152,7 @@ div.paginas {
 .submenu {
   position: absolute;
   background: rgba(143, 202, 218, 0.68);
-  width: 120%;
+  width:auto;
   visibility: hidden;
   opacity: 0;
   transition: opacity 1s;

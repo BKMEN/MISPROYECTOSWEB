@@ -38,9 +38,9 @@ div#Header {
   width: 100%;
   position: relative;
   top: 0;
-  font-size: 350%;
   align-items: center;
   flex: 0 0 auto;
+  align-items: center;
 }
 
 #LOGO {
@@ -55,7 +55,14 @@ div#Header {
   color: #e0e0e0;
   font-weight: bold;
   text-align: center;
-  font: "Minecraft.tff";
+  font-family: 'Press Start 2P', cursive;
+  align-items: center;
+  font-size: 300%;
+  position: absolute;
+  bottom: 0;
+  left: 34%;
+  transform: translate(-50%, -50%);
+
 }
 
 /* CONTENIDO DE LA PAGINA */

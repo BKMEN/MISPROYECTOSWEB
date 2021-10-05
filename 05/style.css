@@ -1,0 +1,24 @@
+thead {
+  background: rgb(13, 134, 42);
+}
+
+table {
+  border: 3px solid rgb(45, 201, 52);
+  border-style: solid;
+  border-spacing: 0;
+}
+
+th, td {
+  border: 1px solid rgb(59, 144, 38);
+  border-collapse: collapse;
+}
+
+th {
+  margin: 50px;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+.curso, .horas {
+  text-align: center;
+}

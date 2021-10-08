@@ -56,7 +56,7 @@ div#Header {
   font-family: 'Press Start 2P', cursive;
   align-items: center;
   font-size: 125%;
-
+animation-iteration-count: infinite;
 }
 
 /* CONTENIDO DE LA PAGINA */

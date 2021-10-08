@@ -33,13 +33,11 @@ html, body {
 /* HEADER */
 div#Header {
   background-color: #351c75;
-  height: 64px;
+  height: 65px;
   color: #2B2181;
   width: 100%;
-  position: relative;
-  top: 0;
-  align-items: center;
-  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -57,11 +55,7 @@ div#Header {
   text-align: center;
   font-family: 'Press Start 2P', cursive;
   align-items: center;
-  font-size: 300%;
-  position: absolute;
-  bottom: 0;
-  left: 34%;
-  transform: translate(-50%, -50%);
+  font-size: 125%;
 
 }
 

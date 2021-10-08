@@ -1,3 +1,8 @@
+@font-face {
+  font-family: TravelingTypewriter;
+  src: url("../");
+}
+
 #FOTO_PERFIL {
   height: 200px;
   margin-left: 100px;
@@ -10,27 +15,32 @@
 .red {
   height: 25px;
 }
+
 table {
-  position: 
-  padding: 10px;
+  position:
+    padding: 10px;
   border: 3px;
   border-color: rgb(0, 0, 244);
   border-style: solid;
   border-collapse: collapse;
   text-align: center;
 }
+
 table, thead, tbody, {
   border-collapse: collapse;
   margin: 100px;
 }
+
 th {
   margin: 100px;
   padding: 10px;
   font-size: 1.3em;
   background: rgb(10, 50, 255);
+  font-family: TravelingTypewriter;
 }
+
 th, td {
   border: 3px;
   border-style: dashed;
-  border-color:rgba(10, 100, 255, 0.82);
+  border-color: rgba(10, 100, 255, 0.82);
 }

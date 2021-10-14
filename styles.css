@@ -167,6 +167,7 @@ div.paginas {
   color: #fff;
   text-decoration: none;
   text-align: center;
+  align-content: center;
 }
 
 .menu li:hover .submenu {
@@ -174,10 +175,15 @@ div.paginas {
   opacity: 1;
 }
 .icono {
-  height: 25px;
+  height: 50px;
 }
-.margen {
-  
+li > a {
+
+  border-bottom: dashed;
+}
+.nav-item {
+  margin: 0px;
+  padding: 10px;
 }
 
 /* PIE DE PAGINA */

@@ -177,9 +177,9 @@ div.paginas {
 .icono {
   height: 50px;
 }
-li > a {
-
+.menu li:hover .submenu li {
   border-bottom: dashed;
+  border-color: rgba(143, 202, 218, 0.68);
 }
 .nav-item {
   margin: 0px;

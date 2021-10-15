@@ -159,6 +159,7 @@ div.paginas {
   opacity: 0;
   transition: opacity 1s;
 }
+  
 
 .submenu li a {
   display: block;

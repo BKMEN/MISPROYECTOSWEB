@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background: rgba(53, 28, 117, 0.7  );
+  background: rgba(53, 28, 117, 0.7);
   backdrop-filter: blur(5px);
   height: 100vh;
   width: 100%;
@@ -159,7 +159,6 @@ div.paginas {
   opacity: 0;
   transition: opacity 1s;
 }
-  
 
 .submenu li a {
   display: block;
@@ -175,13 +174,16 @@ div.paginas {
   visibility: visible;
   opacity: 1;
 }
+
 .icono {
   height: 50px;
 }
+
 .menu li:hover .submenu li {
   border-bottom: dashed;
   border-color: rgba(143, 202, 218, 0.68);
 }
+
 .nav-item {
   margin: 0px;
   padding: 10px;

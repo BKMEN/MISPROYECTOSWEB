@@ -201,12 +201,16 @@ div#footer {
   font-weight: bold;
   height: 50px;
   flex: 0 0 auto;
+  
 }
 
 footer {
-  background-color: #555;
+  background-color: rgba(53, 28, 117, 0.9);
   color: #bbb;
   line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
 }
 
 body {
@@ -214,7 +218,11 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
+.icono-footer {
+  height: 30px;
 
+
+}
 .container {
   flex: 1;
   /* same as flex-grow: 1; */
@@ -225,19 +233,8 @@ ul {
   padding-left: 0;
 }
 
-footer {
-  background-color: #555;
-  color: #bbb;
-  line-height: 1.5;
-}
-
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}
-
-.container {
-  flex: 1;
-  /* same as flex-grow: 1; */
 }

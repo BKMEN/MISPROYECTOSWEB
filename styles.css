@@ -126,24 +126,40 @@ div.paginas {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
+  border-collapse:collapse;
 }
 
 .naviegacion ul {
   list-style: none;
+
+
 }
 
 .menu>li {
   position: relative;
   display: inline-block;
+  background-color: ;
+
+}
+
+.nav-item:hover {
+
+  padding: px;
+}
+.menu {
+
+  border-radius: 15px;
+
 }
 
 .menu li>a {
   position: relative;
   display: block;
   padding: 15px 20px;
-  color: ;
   font-family: "open sans";
   text-decoration: none;
+  border-radius: 15px;
 }
 
 .menu li a:hover {
@@ -158,6 +174,7 @@ div.paginas {
   visibility: hidden;
   opacity: 0;
   transition: opacity 1s;
+  
 }
 
 .submenu li a {
@@ -241,4 +258,13 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+
+/*--CONTENT--*/
+
+.content {
+  margin-top: 100px;
+  margin-left: 25px;
+  text-align: left;
 }

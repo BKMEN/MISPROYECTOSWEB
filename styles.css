@@ -218,8 +218,12 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-.icono-footer {
+.icono-header {
+  position: absolute;
+  top: 10px;
+left: 10px;
   height: 30px;
+  float: left;
 
 
 }

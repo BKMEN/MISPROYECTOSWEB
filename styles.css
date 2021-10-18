@@ -174,7 +174,8 @@ div.paginas {
   visibility: hidden;
   opacity: 0;
   transition: opacity 1s;
-  
+  border-radius: 15px;
+
 }
 
 .submenu li a {
@@ -199,6 +200,7 @@ div.paginas {
 .menu li:hover .submenu li {
   border-bottom: dashed;
   border-color: rgba(143, 202, 218, 0.68);
+  border-radius: 15px;
 }
 
 .nav-item {

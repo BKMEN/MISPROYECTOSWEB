@@ -7,19 +7,33 @@
   color: #7d7d7d;
 }
 
+.img-circle {
+  border-radius: 50%;
+}
+
 .card {
   margin-left: 25%;
   margin-right: 25%;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   padding: 20px;
   background: white;
   border: dashed rgb(155, 155, 155) 1px;
-  border-radius: 4px;
+  border-radius: 15px;
   box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 20%)
 }
 
 .text-center {
   text-align: center;
+}
+
+.boton:hover {
+color: red;
+
+}
+
+.list-inline > li {
+  display: inline-block;
+  width: 90px;
 }
 
 div {
@@ -46,15 +60,15 @@ strong {
   font-size: 25px;
 }
 
-.link-github {}
+.link-github {
+
+
+}
 
 .red {
-  height: 25px;
+  height: 40px;
 }
 
-h2.arriba {
-  position: relative;
-}
 
 div#FOLLOW> {
   align-items: center;

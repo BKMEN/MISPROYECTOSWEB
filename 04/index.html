@@ -5,8 +5,11 @@
   <meta charset="utf-8">
   <title>My Profile</title>
 </head>
-<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
 <body>
 
   <div id="container">
@@ -15,30 +18,30 @@
 
       <!-- FOTO -->
       <div id="FOTO_DE_PERFIL">
-        <img id="FOTO_PERFIL" src="InShot_20210922_001731338.jpg" alt="">
+        <img id="FOTO_PERFIL" src="InShot_20211019_130547372.jpg" id="img-profile" class="img-circle" alt="">
       </div>
       <!-- NOMBRE -->
       <div id="Nombre">
-        <h1>Hello, I'm Yován</h1>
+        <h1>Hola, Soy Yován</h1>
       </div>
       <!-- Descripcion -->
       <div id="Descripcion">
-        <p>Soy Yovan y me gusta la programacion, el diseño de paginas web y los sneakers de coleccion. Hago reventa de zapatillas <strong>para gente que no ha podido comprarlas en el momento de salida.</strong></p>
+        <p>Soy Yovan y me gusta la programacion, el diseño de paginas web y los sneakers de coleccion. Hago reventa de zapatillas <strong>para gente que no ha podido comprarlas en el sorteo de salida.</strong></p>
       </div>
     </div>
     <div class="card text-center" id="GITHUB">
       <!-- LINKS -->
       <div id="LINKS">
-        <a class="link-github" href="https://github.com/BKMEN">Github</a>
+        <a class="boton link-github" href="https://github.com/BKMEN">Github</a>
       </div>
       <!-- FOLLOW LINKS -->
       <div id="FOLLOW">
-        <h2><strong>Follow me</strong></h2>
-        <ul>
+        <h2><strong>CONTACTO</strong></h2>
+        <ul class="list-inline">
 
-          <li><a class="fa text-center" href="https://www.instagram.com/imnot.yovan/?hl=es"><img class="red" src="https://cdn.pixabay.com/photo/2016/08/01/21/02/icon-1562139_960_720.png" alt=""></a></li>
-          <li><a class="fa text-center" href="https://wa.link/smfdth"><img class="red" src="https://img.icons8.com/ios/500/whatsapp--v1.png" alt=""></a></li>
-          <li><a class="fa text-center" href="mailto:yovanjcd@gmail.com"><img class="red" src="https://cdn-icons-png.flaticon.com/512/324/324100.png" alt=""></a></li>
+          <li><a class="text-center" href="https://www.instagram.com/imnot.yovan/?hl=es"><img class="red" src="https://cdn.pixabay.com/photo/2016/08/01/21/02/icon-1562139_960_720.png" alt=""></a></li>
+          <li><a class="text-center" href="https://wa.link/smfdth"><img class="red" src="https://img.icons8.com/ios/500/whatsapp--v1.png" alt=""></a></li>
+          <li><a class="text-center" href="mailto:yovanjcd@gmail.com"><img class="red" src="https://cdn-icons-png.flaticon.com/512/324/324100.png" alt=""></a></li>
         </ul>
       </div>
     </div>
@@ -49,47 +52,78 @@
 
 
         <div class=" text-center">
-                <h2>Canciones Favoritas</h2>
-                <table>
+          <h2>Canciones Favoritas</h2>
+          <table>
 
-                <thead>
-                  <tr>
-                    <th>Canciones favoritas</th>
-                    <th>Autor</th>
-                    <th>Spotify</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Money Trees</td>
-                    <td>Kendrik Lamar</td>
-                    <td><iframe src="https://open.spotify.com/embed/track/2HbKqm4o0w5wEeEFXm2sD4" widtd="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></td>
-                  </tr>
-                  <tr>
-                    <td>Moonligt</td>
-                    <td>XXXTentacion</td>
-                    <td><iframe src="https://open.spotify.com/embed/track/0JP9xo3adEtGSdUEISiszL" widtd="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></td>
-                  </tr>
-                  <tr>
-                    <td>Sico Mode</td>
-                    <td>Travis Scott</td>
-                    <td><iframe src="https://open.spotify.com/embed/track/2xLMifQCjDGFmkHkpNLD9h" widtd="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></td>
-                  </tr>
-                  <tr>
-                    <td>Bitch, Don’t Kill My Vibe</td>
-                    <td>Kendrik Lamar</td>
-                    <td><iframe src="https://open.spotify.com/embed/track/4Pwjz3DfvfQWV0rO2V8jyh" widtd="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></td>
-                  </tr>
-                </tbody>
-              </table>
-              </div>
-
+            <thead>
+              <tr>
+                <th>Canciones favoritas</th>
+                <th>Autor</th>
+                <th>Spotify</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Money Trees</td>
+                <td>Kendrik Lamar</td>
+                <td><iframe src="https://open.spotify.com/embed/track/2HbKqm4o0w5wEeEFXm2sD4" widtd="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </td>
+              </tr>
+              <tr>
+                <td>Moonligt</td>
+                <td>XXXTentacion</td>
+                <td><iframe src="https://open.spotify.com/embed/track/0JP9xo3adEtGSdUEISiszL" widtd="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </td>
+              </tr>
+              <tr>
+                <td>Sico Mode</td>
+                <td>Travis Scott</td>
+                <td><iframe src="https://open.spotify.com/embed/track/2xLMifQCjDGFmkHkpNLD9h" widtd="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </td>
+              </tr>
+              <tr>
+                <td>Bitch, Don’t Kill My Vibe</td>
+                <td>Kendrik Lamar</td>
+                <td><iframe src="https://open.spotify.com/embed/track/4Pwjz3DfvfQWV0rO2V8jyh" widtd="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+
       </div>
     </div>
+    <div class="card text-center">
+      <h2>ACERCA DE LA PAGINA</h2>
+      <p>Esta pagina esta hecha con los retos de <strong><a class="boton" href="https://github.com/JorgeDuenasLerin/html-css-challenges">Jorge Duenas Lerin</a></strong></p>
+      <ul class="list-inline">
+        <li>
+          <a href="#">
+            <i class="fa fa-heart"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-share"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <!-- FIN CONTAINER -->
+
+
+
+  
+
   </div>
+
+  <!-- FIN CONTAINER -->
+
 </body>
 
 </html>

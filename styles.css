@@ -261,3 +261,9 @@ body {
   margin-left: 50px;
   text-align: left;
 }
+
+#ppal {
+  border-style: none;
+  width: 80%;
+  height: 1000px;
+}

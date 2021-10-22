@@ -148,8 +148,8 @@ h1#NOMBRE {
 
 /*               container                   */
 .card {
-  margin-left: 50%;
-  margin-right: 15%;
+  margin-left: 150px;
+  margin-right: 150px;
   margin-bottom: 30px;
   padding: 20px;
   background: rgba(250, 250, 250, 0.09);

@@ -1,0 +1,25 @@
+* {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  background-image: url(../9795bfaed4e94a1bebe24a743857f149.gif);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  flex: 0 0 100%;
+  display: flex;
+}
+
+
+body {
+  background: rgba(50, 50, 50, 0.2);
+  backdrop-filter: blur(50px);
+  height: 100vh;
+	width: 100%;
+  flex: 0 0 100%;
+  display: flex;
+}

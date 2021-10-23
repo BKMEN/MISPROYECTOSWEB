@@ -237,6 +237,15 @@ h1#NOMBRE {
   margin-bottom: 100px;
 }
 
+.container-footer {
+  background-color: rgba(164, 141, 118, 0.58);
+  height: 50px;
+}
+
+.footer {
+  color: white;
+}
+
 .tamaño-articulo {
   height: 300px;
   margin: auto;

@@ -23,46 +23,119 @@
   margin-bottom: 25px;
   border: solid 1px;
   margin-top: 35px;
+}
+
+@keyframes color {
+  0%, to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0)
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0)
+  }
+
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  10% {
+    left: 5rem;
+    top: 0rem;
+    background-color: rgba(150, 0, 255, 0.5);
+  }
+
+  30% {
+    top: 5rem;
+    left: 5rem;
+    background-color: rgba(50, 50, 250, 0.5);
+  }
+
+  60% {
+    top: 5rem;
+    left: 0;
+    background-color: #9b59b6;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.boton-comprar {
+  -webkit-animation-name: color;
+  animation-name: color;
   animation-iteration-count: infinite;
   animation-name: color;
 }
 
-@keyframes color{0%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}0% {
-  left: 0;
-  top: 0;
-}
-10% {
-  left: 5rem;
-  top: 0rem;
-  background-color: #9b59b6;
-}
-30% {
-  top: 5rem;
-  left: 5rem;
-  background-color: rgba(50, 50, 150, 0.5);
-}
-60%{
-  top: 5rem;
-  left: 0;
-  background-color: #9b59b6;
-}
-100% {
-  top: 0;
-  left: 0;
-}}
-.boton-comprar{-webkit-animation-name:color;animation-name:color}
-
-
 .boton-comprar:hover {
   padding: 5px;
-  background-color: rgba(150, 50, 50, 0.5);
+  background-color: rgba(255, 0, 0, 0.9);
   margin: auto;
+  margin-bottom: 25px;
   border: solid 1px;
   margin-top: 35px;
+  animation-iteration-count: infinite;
+  animation-name: color;
+}
+
+
+@keyframes color2 {
+  0%, to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0)
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0)
+  }
+
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  10% {
+    left: 5rem;
+    top: 0rem;
+    background-color: rgba(250, 0, 0, 1);
+  }
+
+  30% {
+    top: 5rem;
+    left: 5rem;
+    background-color: rgba(250, 0, 0, 1);
+  }
+
+  60% {
+    top: 5rem;
+    left: 0;
+    background-color: rgba(250, 0, 0, 1);
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
 }
 
 .animate__animated.animate__color, .boton-comprar {
-  --animate-duration: 30s;
+  --animate-duration: 60s;
 }
 
 .remove-bg {
@@ -70,8 +143,8 @@
 }
 
 li {
-border-color: rgba(143, 202, 218, 0.68);
-border-bottom: 2px solid;
+  border-color: rgba(143, 202, 218, 0.68);
+  border-bottom: 2px solid;
 }
 
 * {

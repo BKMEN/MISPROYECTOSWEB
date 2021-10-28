@@ -57,6 +57,18 @@
     background-color: rgba(50, 50, 250, 0.5);
   }
 
+  35% {
+    transform: rotate(10deg) scale(1.2);
+  }
+  40% {
+    transform: rotate(-10deg) scale(1.1);
+    background-color: rgba(250, 50, 50, 0.5);
+  }
+  47% {
+    transform: rotate(0deg);
+    transform: scale(1);
+  }
+
   60% {
     top: 5rem;
     left: 0;
@@ -73,6 +85,7 @@
   -webkit-animation-name: color;
   animation-iteration-count: infinite;
   animation-name: color;
+  animation-direction: alternate;
 }
 
 .boton-comprar:hover {
@@ -84,6 +97,7 @@
   margin-top: 35px;
   animation-iteration-count: infinite;
   animation-name: color2;
+  animation-direction: alternate;
 }
 
 
@@ -135,7 +149,7 @@
 }
 
 .animate__animated.animate__color, .boton-comprar {
-  --animate-duration: 60s;
+  --animate-duration: 30s;
 }
 
 .remove-bg {

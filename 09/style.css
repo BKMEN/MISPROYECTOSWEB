@@ -17,7 +17,7 @@
 }
 
 * {
-  color: white;
+
   margin: 0px;
   padding: 0px;
 }
@@ -29,13 +29,11 @@ html {
   background-size: cover;
   height: 100vh;
   width: 100%;
-  flex: 0 0 100%;
-  display: flex;
 }
 
 body {
   background: rgba(100, 50, 255, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(25px);
   height: 100vh;
   width: 100%;
   flex: 0 0 100%;
@@ -52,6 +50,12 @@ html, body {
   width: 100%;
   height: 100%;
   line-height: 1.5;
+}
+
+#IFrame1 {
+  border-style: none;
+  width: 80%;
+  height: 1000px;
 }
 
 a {
@@ -112,6 +116,9 @@ h1#NOMBRE {
 }
 
 
+#formulario {
+  color: black;
+}
 option {
   color: black;
 }

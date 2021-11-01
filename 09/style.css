@@ -3,8 +3,10 @@
   src: url("../Fonts/Over The Rainbow.ttf");
 }
 
+
+
 .tipografia {
-  font-family: bit;
+  color: white;
 }
 
 .centrado {
@@ -90,6 +92,7 @@ h1#NOMBRE {
   font-weight: bold;
   margin-top: 15px;
   font-size: 35px;
+  font-family: bit;
 }
 
 /*               container                   */
@@ -125,4 +128,10 @@ option {
 
 .footer {
   color: white;
+}
+
+
+#IFrame1 {
+  height: 200px;
+  width: 200px;
 }

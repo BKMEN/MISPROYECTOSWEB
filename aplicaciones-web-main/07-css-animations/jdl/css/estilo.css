@@ -1,0 +1,28 @@
+body{
+  background: black;
+}
+
+.redondo {
+  border-radius: 15px;
+}
+
+div#container {
+  margin: 0 auto;
+  width: 700px;
+  background: white;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+div.principal img#producto{
+  float: left;
+  padding: 1em;
+}
+
+a#compra {
+  display: inline-block;
+  padding: 1em;
+  background: red;
+  color: white;
+  font-weight: bolder;
+}

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: West;
+  src: url(font/west.ttf);
+}
+
+@font-face {
+  font-family: WestPixel;
+  src: url(font/westpixel.ttf);
+}
+
+body {
+  background: url('imgs/madera.jpg');
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div#contenido {
+  width: 80%;
+  margin: auto;
+  background-color: #966F33;
+  text-align: center;
+}
+
+h1 {
+  font-family: West;
+  font-size: 8em;
+}

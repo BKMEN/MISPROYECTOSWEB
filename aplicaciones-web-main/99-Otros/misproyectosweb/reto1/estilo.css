@@ -1,0 +1,17 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+}
+
+table > thead > tr:first-child {
+  font-size: 3em;
+}
+
+table > thead > tr:first-child {
+  font-size: 3em;
+}

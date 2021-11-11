@@ -3,8 +3,6 @@
   src: url("../Fonts/Over The Rainbow.ttf");
 }
 
-
-
 .tipografia {
   color: white;
 }
@@ -19,7 +17,6 @@
 }
 
 * {
-
   margin: 0px;
   padding: 0px;
 }
@@ -34,8 +31,8 @@ html {
 }
 
 body {
-  background: rgba(100, 50, 255, 0.1);
-  backdrop-filter: blur(25px);
+  background: rgba(50, 50, 255, 0.2);
+  backdrop-filter: blur(100px);
   height: 100vh;
   width: 100%;
   flex: 0 0 100%;
@@ -118,10 +115,10 @@ h1#NOMBRE {
   height: 50px;
 }
 
-
 #formulario {
   color: black;
 }
+
 option {
   color: black;
 }
@@ -129,7 +126,6 @@ option {
 .footer {
   color: white;
 }
-
 
 #IFrame1 {
   height: 200px;

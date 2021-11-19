@@ -1,5 +1,6 @@
 <?php
-$numero_aleatiorio=2;
+session_start();
+$Session_numero= rand(1,10);
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -11,24 +12,25 @@ $numero_aleatiorio=2;
     <h1> ADIVINA CUALQUIER COSA </h1>
     <div class="">
     <form class="" action="index.php" method="post">
-        <input type="text" name="numero" value="">
+        <input type="text" name="enviado" value="">
         <input type="submit" name="" value="ENVIAR">
         <?php
-          if ( isset ($_POST ['numero'])) {
-            echo "HAS ENVIADO ALGO: ". $_POST ['numero']. "</h3>";
-            if ($numero_aleatiorio == $_POST['numero']){
+          if ( isset ($_POST ['enviado'])) {
+            echo "HAS ENVIADO ALGO: ". $_POST ['enviado']. "</h3>";
+            if ($Session_numero == $_POST['enviado']){
               echo '<br><br><img src="you-win-8bit.gif">';
             }
-          if ($numero_aleatiorio > $_POST['numero']){
+          if ($Session_numero > $_POST['enviado']){
             echo "<h1> TU NUMERO ES MAS PEQUEÑO </h1>";
           }
-          if ($numero_aleatiorio < $_POST['numero']){
+          if ($Session_numero < $_POST['enviado']){
             echo "<h1> TU NUMERO ES MAS GRANDE </h1>";
           }
 
           } else {
             echo "BIENVENIDO AL JUEGO";
           }
+          echo "$Session_numero";
         ?>
     </form>
     </div>

@@ -1,0 +1,70 @@
+body{
+  background-image: url("fondoclaro.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: helvetica, arial, sans-serif;
+}
+@font-face {
+  font-family: creativeculture;
+  src: url(creative_culture/creativeculture.ttf);
+}
+.casilla1 h3 {
+  color:  white;
+  text-shadow:orange  3px 3px, purple 7px 7px;
+  font-family: creativeculture;
+  font-size: 70px;
+  font-weight: lighter;
+  margin-top: 50px;
+  width: 80%;
+}
+.casilla1 {
+  background-image: url("fondoclaro.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: helvetica, arial, sans-serif;
+  margin-left: 10%;
+  margin-top: 4%;
+
+  border-radius: 22%;
+  width: 500px;
+  height: 250px;
+  float: left;
+  position: absolute;
+}
+.casilla1 img{
+  border-radius: 20%;
+  width: 500px;
+  height: 250px;
+  position: absolute;
+}
+.casilla1 h3{
+  position: absolute;
+  margin-left: 100px;
+}
+.casilla2 {
+  margin-left: 10%;
+  margin-top: 19%;
+  background-color:white;
+  border-radius: 25%;
+  width: 500px;
+  height: 450px;
+  float: left;
+  position: absolute;
+  text-align: center;
+}
+.casilla3 {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10%;
+  width: 900px;
+  height: 750px;
+  margin-top: 2%;
+  margin-left: 40%;
+  position: absolute;
+}
+.formulario{
+  padding: 50px;
+}
+.datoizquierda{ float: left;margin-left: 50px;}
+.datoderecha{float: right;margin-right: 50px;}
+#botonenvio{text-align: center;}

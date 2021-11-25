@@ -1,8 +1,0 @@
-a c b 2021-11-05 #c4a000 50 leo 1
-carolain car carol 2021-10-31 #73d216 50 leo 3
-12 sa 1221 2021-11-18 #000000 50 acuario 
-12 sa 1221 2021-11-18 #000000 50 acuario 1
-asda s as 2021-11-07 #000000 50 tauro 2
-asda s as 2021-11-07 #000000 54 tauro 2
-asda s a 2021-11-07 #edd400 54 tauro 1
-a a a 2021-10-30 #000000 40 acuario 2

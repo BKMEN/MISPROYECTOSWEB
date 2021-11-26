@@ -30,8 +30,9 @@ $Session_numero= rand(1,10);
           } else {
             echo "BIENVENIDO AL JUEGO";
           }
-          echo "$Session_numero";
+
         ?>
+        <?php echo "$Session_numero"; ?>
     </form>
     </div>
   </body>

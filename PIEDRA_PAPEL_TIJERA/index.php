@@ -1,115 +1,79 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Piedra, papel o tijera</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    </head>
-    <body>
-<?php
-
-if ($_SERVER['REQUEST_METHOD']=='POST')
-{
-    $jugada_del_usuario = intval ($_POST['jugada_del_usuario']);
-    $jugada_del_ordenador=1+rand()%3;
-    if($jugada_del_ordenador==1)
-        echo 'La jugada del ordenador es Piedra<br>';
-    if($jugada_del_ordenador==2)
-        echo 'La jugada del ordenador es Papel<br>';
-    if($jugada_del_ordenador==3)
-        echo 'La jugada del ordenador es Tijera<br>';
-    if($jugada_del_usuario==$jugada_del_ordenador)
-        echo 'Empate<br>';
-    if(($jugada_del_usuario==1&&$jugada_del_ordenador==3)||($jugada_del_usuario==2&&$jugada_del_ordenador==1)||($jugada_del_usuario==3&&$jugada_del_ordenador==2))
-        echo 'Gana usuario<br>';
-    if(($jugada_del_usuario==3&&$jugada_del_ordenador==1)||($jugada_del_usuario==1&&$jugada_del_ordenador==2)||($jugada_del_usuario==2&&$jugada_del_ordenador==3))
-        echo 'Gana ordenador<br>';
-    echo 'Valor de jugada del ordenador: ' . $jugada_del_ordenador . "<br/>\n";
-}
-
-?>
-        <form method="post">
-            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="1" cellpadding="1" cellspacing="1">
-                <tbody>
-                    <tr>
-                        <td>
-                            <label for="jugada_del_usuario">Selecciona el valor de jugada del usuario:</label>
-                        </td>
-                        <td>
-                            <select name="jugada_del_usuario" required="required">
-                                <option value="1">Piedra</option>
-                                <option value="2">Papel</option>
-                                <option value="3">Tijera</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr align="center">
-                        <td colspan="2" rowspan="1">
-                            <input value="Procesar" type="submit" />
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
-    </body>
-</html>
-
-
+<!--CUADRO AZUL-->
 <?php
 session_start();
-if (! isset($_POST['numero']) ){ //si no envio nada
-  $_SESSION['numero']=rand(1,10);
+if (! isset($_POST['seleccionar']) ){ //si no envio nada
+  $_SESSION['seleccionar']=rand(0,2);
   $_SESSION['intentos']=0;
 }
-$numero_aleatorio = $_SESSION['numero'];
+$maquina = $_SESSION['seleccionar'];
 $intentos=$_SESSION['intentos'];
 $_SESSION['intentos']=$_SESSION['intentos']+1;
 echo "llevas"." ".$intentos." intentos";
+$_POST['seleccionar']=$jugador;
 ?>
 
+
+<!--CUADRO AZUL-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>PIEDRA PAPEL O TIJERA</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+  <!--CUADRO AZUL-->
+  <div class="formulario centrado">
+    <form method="post">
+<img class="imagenes-seleccionar" src="0.jpg" alt="">
+<input class="seleccionar" type="radio" name="seleccionar" value="0">
+<img class="imagenes-seleccionar" src="1.jpg" alt="">
+<input type="radio" name="seleccionar" value="1">
+<img class="imagenes-seleccionar" src="2.jpg" alt="">
+<input type="radio" name="seleccionar" value="2">
+<br>
+<br>
+<input type="submit" name="JUGAR" value="JUGAR">
+  </form>
+  </div>
+  <div class="resultado centrado">
+    <?php if (isset($_POST['seleccionar']) ) {
+           if ( $maquina == $_POST['seleccionar'] ) {
+             echo "<h1>EMPATE</h1>";
+           }
+         } ?>
+         <?php
+   if( isset($_POST['seleccionar']) ){
+     echo "<h3>Has enviado algo :" ." ". $_POST['seleccionar']."</h3>";
 
-    <h1>Adivina el Número!</h1>
-    <div>
-      <?php if (isset($_POST['numero']) ) {
-        if ( $numero_aleatorio == $_POST['numero'] ) {
-          echo "<h1>Has ganado !!!</h1>".'<img src="confetti.gif" width="500" height="500" />';
-        }
-      } ?>
-      <?php if ($intentos<4) {?>
-    <form  action="index.php" method="post" id="content">
-      <input type="text" name="numero" value="">
-      <input type="submit" name="" value="Enviar">
-    </form>
-    <br>
-    <?php
-    if( isset($_POST['numero']) ){
-      echo "<h3>Has enviado algo:" ." ". $_POST['numero']."</h3>";
+     if(($_POST['seleccionar']==0&&$maquina==2)||($_POST['seleccionar']==1&&$maquina==0)||($_POST['seleccionar']==2&&$maquina==1))
+         echo 'HAS GANADO<br>';
+     if(($_POST['seleccionar']==2&&$maquina==0)||($_POST['seleccionar']==0&&$maquina==1)||($_POST['seleccionar']==1&&$maquina==2))
+         echo 'HAS PERDIDO<br>';
+       }
+      ?>
 
-      if ($numero_aleatorio < $_POST['numero'] ) {
-        echo "<h1>Tu número es mayor !!!</h1>";
-      }
-      if ($numero_aleatorio > $_POST['numero'] ) {
-        echo "<h1>Tu número es menor !!!</h1>";
-      }
-    } else {
-      echo "Bienvenido al juego!";
-    } ?>
+
+
+
+  <?php
+
+  echo "<h2>la maquina ha sacado</h2>";
+
+  {?>
+    <img src='<?=$maquina?>.jpg' WIDTH='70'HEIGHT='55'>
   <?php } ?>
 
-    <?php
+  <?php
 
-    if ($intentos>3 && $numero_aleatorio!=$_POST['numero']) {
-        echo "Has perdido!"."         ".'<img src=".jpeg" width="250" height="200" />';//calaverra y quitar formulario
+  echo "<h2>has sacado</h2>";
 
-    }
-     ?>
-     <p>  <a href="index.php">Reiniciar partida</a></p>
+  {?>
+    <img src='<?=$jugador?>.jpg' WIDTH='70'HEIGHT='55'>
+  <?php } ?>
+  <br>
+  <p>  <a href="index.php">Reiniciar partida</a></p>
   </div>
+
   </body>
 </html>

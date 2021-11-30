@@ -1,0 +1,12 @@
+.desaparecer {
+  display:none
+}
+.won {
+  color: green;
+}
+.lost {
+  color: red;
+}
+.tie {
+  color:rgb(255, 161, 0);
+}

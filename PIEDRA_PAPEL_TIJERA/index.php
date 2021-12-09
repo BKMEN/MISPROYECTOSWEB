@@ -21,11 +21,11 @@ $jugador=$_POST['seleccionar'];
   <!--CUADRO AZUL-->
   <div class="formulario centrado desaparecer">
     <form method="post">
-<img class="imagenes-seleccionar" src="0.jpg" alt="">
+<img class="imagenes-seleccionar" src="https://media.istockphoto.com/vectors/stone-and-rock-hand-drawn-natural-stone-or-rock-isolated-vector-vector-id832436756" alt="">
 <input class="seleccionar" type="radio" name="seleccionar" value="0">
-<img class="imagenes-seleccionar" src="1.jpg" alt="">
+<img class="imagenes-seleccionar" src="https://static.vecteezy.com/system/resources/previews/000/554/801/non_2x/paper-icon-vector.jpg" alt="">
 <input type="radio" name="seleccionar" value="1">
-<img class="imagenes-seleccionar" src="2.jpg" alt="">
+<img class="imagenes-seleccionar" src="https://media.istockphoto.com/vectors/scissors-icon-black-minimalist-icon-isolated-on-white-background-vector-id867290862?k=20&m=867290862&s=170667a&w=0&h=Y5WF99LiTKqkpxvvd4FgukU0GlOZxzMEYwgsrwGcgBc=" alt="">
 <input type="radio" name="seleccionar" value="2">
 <br>
 <br>

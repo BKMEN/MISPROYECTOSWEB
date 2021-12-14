@@ -1,0 +1,21 @@
+* {
+  padding: 0px;
+  margin: 0p;
+  align-content: center;
+}
+
+.imagenes-seleccionar {
+  height: 100px;
+}
+
+.formulario {
+
+}
+
+.centrado {
+  margin-top: 100px;
+  font-size: 32px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

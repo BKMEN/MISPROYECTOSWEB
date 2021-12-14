@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CALCULADORA</title>
+  <script type="text/javascript">
+    window.addEventListener('load', function() {
+        let botoncalcular = document.getElementById('calcular')
+        let resulatado = document.getElementById('res')
+        let formulario = document.getElementById('calc-form')
+        botoncalcular.addEventListener('clcik', function() {
+          let n1 = paseInt (formulario.n1.value)
+          let n1 = paseInt (formulario.n1.value)
+          let op = formulario.op.value
+          let res = 0
+          })
+    })
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="centrado">
+    <form class="" id="calc-form" action="index.html" method="post">
+
+    </form>
+    <span>N1</span>
+    <input type="text" id="n1" name="" value="">
+    <span>N2</span>
+    <input type="text" id="n2" name="" value="">
+    <br>
+    <input type="radio" id="suma" name="op" value="+">suma
+    <input type="radio" id="resta" name="op" value="-">resta
+    <input type="radio" id="dividir" name="op" value="/">dividir
+    <input type="radio" id="multiplicar" name="op" value="*">multiplicar
+    <br>
+    <input type="button" name="" value="Calcular">
+    <h1 id="res">RESULTADO</h1>
+    <br>
+
+  </div>
+</body>
+
+</html>

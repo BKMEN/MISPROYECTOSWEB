@@ -1,0 +1,13 @@
+.centrado {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.dinero {
+  position: absolute;
+  right: 0px;
+  text-align: center;
+}
+.escalado {
+  height: 100px;
+}
